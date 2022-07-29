@@ -59,6 +59,8 @@ class CelebProvider with ChangeNotifier {
     return _celebList.firstWhere((cleb) => cleb.id == id);
   }
 
+  // logs
+
   final List<Celebs> _logs = [];
   List<Celebs> get logList {
     return [..._logs];

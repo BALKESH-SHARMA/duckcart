@@ -63,7 +63,7 @@ class _DonationScreenState extends State<DonationScreen> {
         contentPadding: isAmount ? const EdgeInsets.all(13) : null,
         prefix: isAmount
             ? SizedBox(
-                width: 93,
+                width: 107,
                 height: 34,
                 child: Row(
                   children: [
@@ -74,11 +74,11 @@ class _DonationScreenState extends State<DonationScreen> {
                       curr.symbol.toString(),
                       style: const TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 20,
+                          fontSize: 17,
                           color: Colors.black),
                     ),
                     const SizedBox(
-                      width: 20,
+                      width: 15,
                     ),
                     GestureDetector(
                       onTap: currency,
