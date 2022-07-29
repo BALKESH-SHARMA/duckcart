@@ -35,6 +35,14 @@ class _DonationScreenState extends State<DonationScreen> {
     _amount.text = '0';
   }
 
+  @override
+  void dispose() {
+    super.dispose();
+    _amount.dispose();
+    _message.dispose();
+    _name.dispose();
+  }
+
   final style = const TextStyle(
     color: Colors.black,
     fontWeight: FontWeight.bold,
